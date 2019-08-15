@@ -32,7 +32,7 @@ high.on("click", soSome);
 function soSome() {
 event.preventDefault();
 var apple = min.val();
-var ex = (apple * 0.0016);
+var ex = (apple * 0.0039);
 var pineapple= weight.val();
 var oz = (pineapple * ex);
 para.append(`${Math.round(oz)} oz of water`);
