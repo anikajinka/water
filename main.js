@@ -1,0 +1,93 @@
+var min = $('.min')
+var weight = $('.weight')
+var low = $('.low')
+var med = $('.med')
+var high = $('.high')
+var para = $('.para')
+
+low.on("click", doSome);
+
+function doSome() {
+event.preventDefault();
+var apple = min.val();
+var ex = (apple * 0.0028);
+var pineapple= weight.val();
+var oz = (pineapple * ex);
+para.append(`${Math.round(oz)} oz of water`);
+}
+
+med.on("click", goSome);
+
+function goSome() {
+event.preventDefault();
+var apple = min.val();
+var ex = (apple * 0.0031);
+var pineapple= weight.val();
+var oz = (pineapple * ex);
+para.append(`${Math.round(oz)} oz of water`);
+}
+
+high.on("click", soSome);
+
+function soSome() {
+event.preventDefault();
+var apple = min.val();
+var ex = (apple * 0.0016);
+var pineapple= weight.val();
+var oz = (pineapple * ex);
+para.append(`${Math.round(oz)} oz of water`);
+}
+
+var delete = $('.delete');
+
+delete.on("click", clearParagraph)
+function clearParagraph() {
+  para.empty();
+}
+
+var mina = $('.mina')
+var weighta = $('.weighta')
+var lowa = $('.lowa')
+var meda = $('.meda')
+var higha = $('.higha')
+var paraa = $('.paraa')
+
+lowa.on("click", doThat);
+
+function doThat() {
+event.preventDefault();
+var orange = mina.val();
+var xe = (orange * 0.0022);
+var watermelon = weighta.val();
+var zo = (watermelon * xe);
+paraa.append(`${Math.round(zo)} oz of water`);
+}
+
+meda.on("click", goThat);
+
+function goThat() {
+event.preventDefault();
+var orange = mina.val();
+var xe = (orange * 0.0027);
+var watermelon = weighta.val();
+var zo = (watermelon * xe);
+paraa.append(`${Math.round(zo)} oz of water`);
+}
+
+higha.on("click", soThat);
+
+function soThat() {
+event.preventDefault();
+var orange = mina.val();
+var xe = (orange * 0.0031);
+var watermelon = weighta.val();
+var zo = (watermelon * xe);
+paraa.append(`${Math.round(zo)} oz of water`);
+}
+
+var deletea = $('.deletea');
+
+deletea.on("click", clearParagraph)
+function clearParagraph() {
+  paraa.empty();
+}
