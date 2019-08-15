@@ -1,5 +1,5 @@
-var min = $('.min')
-var weight = $('.weight')
+ var min = $('.min')
+ var weight = $('.weight')
 var low = $('.low')
 var med = $('.med')
 var high = $('.high')
@@ -38,12 +38,6 @@ var oz = (pineapple * ex);
 para.append(`${Math.round(oz)} oz of water`);
 }
 
-var delete = $('.delete');
-
-delete.on("click", clearParagraph)
-function clearParagraph() {
-  para.empty();
-}
 
 var mina = $('.mina')
 var weighta = $('.weighta')
@@ -85,9 +79,30 @@ var zo = (watermelon * xe);
 paraa.append(`${Math.round(zo)} oz of water`);
 }
 
-var deletea = $('.deletea');
+var test1 = $('.test1');
+var good = $('.good');
 
-deletea.on("click", clearParagraph)
-function clearParagraph() {
-  paraa.empty();
+good.on("click", goodBtn);
+
+function goodBtn() {
+ event.preventDefault();
+ test1.text("thanks for the feedback!");
+}
+
+var ok = $('.ok');
+
+ok.on("click", okBtn)
+
+function okBtn() {
+ event.preventDefault();
+test1.text("thanks for the feedback!");
+}
+
+var bad = $('.bad');
+
+bad.on("click", badBtn)
+
+function badBtn() {
+ event.preventDefault();
+test1.text("thanks for the feedback!");
 }
