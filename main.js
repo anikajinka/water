@@ -1,5 +1,5 @@
- var min = $('.min')
- var weight = $('.weight')
+var min = $('.min')
+var weight = $('.weight')
 var low = $('.low')
 var med = $('.med')
 var high = $('.high')
