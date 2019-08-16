@@ -51,7 +51,7 @@ lowa.on("click", doThat);
 function doThat() {
 event.preventDefault();
 var orange = mina.val();
-var xe = (orange * 0.0022);
+var xe = (orange * 0.0024);
 var watermelon = weighta.val();
 var zo = (watermelon * xe);
 paraa.append(`${Math.round(zo)} oz of water`);
@@ -62,7 +62,7 @@ meda.on("click", goThat);
 function goThat() {
 event.preventDefault();
 var orange = mina.val();
-var xe = (orange * 0.0027);
+var xe = (orange * 0.0030);
 var watermelon = weighta.val();
 var zo = (watermelon * xe);
 paraa.append(`${Math.round(zo)} oz of water`);
@@ -73,7 +73,7 @@ higha.on("click", soThat);
 function soThat() {
 event.preventDefault();
 var orange = mina.val();
-var xe = (orange * 0.0031);
+var xe = (orange * 0.0033);
 var watermelon = weighta.val();
 var zo = (watermelon * xe);
 paraa.append(`${Math.round(zo)} oz of water`);
