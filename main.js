@@ -10,7 +10,7 @@ low.on("click", doSome);
 function doSome() {
 event.preventDefault();
 var apple = min.val();
-var ex = (apple * 0.0028);
+var ex = (apple * 0.0026);
 var pineapple= weight.val();
 var oz = (pineapple * ex);
 para.append(`${Math.round(oz)} oz of water`);
@@ -21,7 +21,7 @@ med.on("click", goSome);
 function goSome() {
 event.preventDefault();
 var apple = min.val();
-var ex = (apple * 0.0031);
+var ex = (apple * 0.0030);
 var pineapple= weight.val();
 var oz = (pineapple * ex);
 para.append(`${Math.round(oz)} oz of water`);
@@ -32,7 +32,7 @@ high.on("click", soSome);
 function soSome() {
 event.preventDefault();
 var apple = min.val();
-var ex = (apple * 0.0039);
+var ex = (apple * 0.0033);
 var pineapple= weight.val();
 var oz = (pineapple * ex);
 para.append(`${Math.round(oz)} oz of water`);
@@ -51,7 +51,7 @@ lowa.on("click", doThat);
 function doThat() {
 event.preventDefault();
 var orange = mina.val();
-var xe = (orange * 0.0024);
+var xe = (orange * 0.0029);
 var watermelon = weighta.val();
 var zo = (watermelon * xe);
 paraa.append(`${Math.round(zo)} oz of water`);
@@ -62,7 +62,7 @@ meda.on("click", goThat);
 function goThat() {
 event.preventDefault();
 var orange = mina.val();
-var xe = (orange * 0.0030);
+var xe = (orange * 0.0032);
 var watermelon = weighta.val();
 var zo = (watermelon * xe);
 paraa.append(`${Math.round(zo)} oz of water`);
@@ -73,7 +73,7 @@ higha.on("click", soThat);
 function soThat() {
 event.preventDefault();
 var orange = mina.val();
-var xe = (orange * 0.0033);
+var xe = (orange * 0.0036);
 var watermelon = weighta.val();
 var zo = (watermelon * xe);
 paraa.append(`${Math.round(zo)} oz of water`);
